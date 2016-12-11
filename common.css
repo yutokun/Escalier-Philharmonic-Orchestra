@@ -1,0 +1,273 @@
+html {
+	background-color:RGB(101,101,101);
+}
+
+body {
+	font-family:sans-serif;
+	max-width:720px;
+	background-color:white;
+	color:RGB(81,81,81);
+	margin:0 auto;
+	-webkit-text-size-adjust:100%;
+}
+
+a {
+	color:rgb(119, 185, 208);
+	text-decoration:none;
+}
+
+ul {
+	margin:0;
+	padding:0;
+	float:left;
+}
+
+.menu {
+	font-weight:600;
+	font-size:14px;
+	color:RGB(102, 171, 197);
+	padding:8px 0 5px 15px;
+	margin:0;
+	float:left;
+	list-style:none;
+}
+
+.menu>a {
+	color:RGB(121,121,121);
+}
+
+h1 {
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue', 'Arial';
+	font-size:30px;
+	font-weight:300;
+	color:RGB(121,121,121);
+	margin:18px 16px 16px 16px;
+}
+
+h2 {
+	font-size:16px;
+	font-weight:600;
+	padding:0 0 0 15px;
+	margin:16px 0 0 0;
+}
+
+p {
+	font-size:14px;
+	font-weight:300;
+	padding:0 20px 0 22px;
+	margin:0 auto 20px;
+}
+
+.topimg {
+	width:100%;
+}
+
+#estop_hype_container {
+	position:relative;
+	overflow:hidden;
+	max-width:100%;
+	margin:0 auto;
+}
+
+/*Recordings ページの埋め込み*/
+iframe#movie {
+	display:block;
+	margin:10px auto;
+	width:87.5%;
+}
+
+/*Photography ページの埋め込み*/
+iframe#photo {
+	display:block;
+	width:87.5%;
+	height:200px;
+	margin:5px auto;
+}
+
+/*Member 個別のdiv*/
+#indv {
+	font-size:13px;
+	font-weight:300;
+	margin:4px 0 0 24px;
+	width:7em;
+	float:left;
+}
+
+/*Members ページのリンクスタイル*/
+#indv>a {
+	color:RGB(81,81,81);
+	text-decoration:underline;
+}
+
+/*Members ページの凡例*/
+h3#notes {
+	font-size:15px;
+	font-weight:300;
+	font-family: 'HelveticaNeue-Light', 'Helvetica Neue', 'Arial';
+	padding-left:22px;
+}
+
+img {
+	display:block;
+	width:100%;
+	margin:0 auto;
+}
+
+.clear {
+	clear:both;
+}
+
+#footer {
+	padding:8px 10px 16px;
+	margin-bottom:0;
+	text-align:center;
+}
+img#his {
+	margin:5px auto;
+}
+
+/*メニューのレスポンシブ*/
+@media screen and (min-width:462px) {
+	ul {
+		margin:0;
+		padding:0;
+		float:right;
+	}
+	.menu {
+	display:block;
+	text-align:right;
+	font-weight:600;
+	font-size:14px;
+	color:RGB(102, 171, 197);
+	padding:8px 25px 5px 0;
+	float:left;
+}
+}
+
+/*以下、PC用レイアウト*/
+@media screen and (min-width:900px) {
+	body {max-width:900px;}
+	h1 {
+		font-size:36px;
+		margin:18px 0 16px 36px;
+	}
+	h2 {
+		font-size:18px;
+		padding:0.7em 0 0.4em 30px;
+		margin:0;
+	}
+	p {
+		font-size:13px;
+		padding:0 40px;
+		margin:0 auto 0.2em;
+	}
+	.topimg {
+		display:block;
+		max-width:840px;
+		margin:0 auto;
+		border:solid 10px RGB(193,193,193);
+	}
+	#estop_hype_container {
+		position:relative;
+		overflow:hidden;
+		width:840px;
+		height:443px;
+		border:solid 10px RGB(193,193,193);
+		margin:0 auto;
+	}
+	img.topflyer {
+		height:280px;
+		position:relative;
+		top:-170px;
+		left:280px;
+	}
+	h2.hotnews {
+		display:block;
+/*		margin-top:-200px;*/
+	}
+	p.hotnews {
+		height:200px;
+/*		width:500px; これはフライヤーありの際*/
+		width:790px;
+		overflow-y:scroll;
+		border:solid 2px RGB(193,193,193);
+		margin:0 0 0.7em 40px;
+		padding:10px;
+	}
+	/*Recordings ページの埋め込み*/
+	iframe#movie {
+		display:block;
+		width:410px;
+		height:230px;
+		margin:10px 20px;
+		float:left;
+	}
+	/*Photography ページの埋め込み*/
+	iframe#photo {
+		display:block;
+		width:800px;
+		height:534px;
+		margin:5px auto;
+	}
+	#hisbox {
+		float:left;
+		height:auto;
+		width:270px;
+		margin:0 10px 30px 10px;
+		padding:0px 5px;
+	}
+	#hisbox>h2 {
+		text-align:center;
+		padding:0 0 0.4em;
+	}
+	#hisbox>img {
+		display:block;
+		margin:0 auto;
+		width:250px;
+		height:auto;
+	}
+	#hisbox>p {
+		width:auto;
+		padding:10px 20px;
+		margin-bottom:0px;
+	}
+	#hisseparator {
+		display:none;
+	}
+		/*Members ページの縦枠*/
+	#memberVertical {
+		width:200px;
+		margin:0 10px;
+		float:left;
+	}
+	div>h2 {
+		font-size:15px;
+		padding:1em 0 0 2em;
+		margin-bottom:-0.3em;
+	}
+		/*	Members ページ氏名個別*/
+	#indv {
+		font-size:13px;
+		margin:4px 0 0 24px;
+		padding:0 0 0 1em;
+		width:7em;
+	}
+	/*Members ページの凡例*/
+	h3#notes {
+		position:absolute;
+		top:40px;
+		right:30px;
+		font-weight:300;
+		font-size:19px;
+		font-family: 'HelveticaNeue-Light', 'Helvetica Neue', 'Arial';
+	}
+	img {
+		margin:0 auto;
+		width:auto;
+	}
+	#footer {
+		padding:8px 30px 16px;
+		margin-bottom:0;
+		text-align:right;
+	}
+}
